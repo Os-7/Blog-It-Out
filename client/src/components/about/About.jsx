@@ -20,6 +20,12 @@ const Text = styled(Typography)`
     color: #878787;
 `;
 
+const Icon = styled(Link)`
+    margin: 0px 5px;
+    position: relative;
+    top: 5px;
+`
+
 const About = () => {
 
     return (
@@ -30,21 +36,21 @@ const About = () => {
                 <Text variant="h5">I'm a Software Engineer based in India. 
                     I've built websites, desktop applications and corporate software.<br />
                     If you are interested, you can view some of my favorite projects here
-                    <Box component="span" style={{ marginLeft: 5 }}>
+                    <Icon component="span" style={{ marginLeft: 5 }}>
                         <Link href="https://github.com/Os-7" color="inherit" target="_blank"><GitHub /></Link>
-                    </Box>
+                    </Icon>
                 </Text>
                 <Text variant="h5">
                     Need something built or simply want to have chat? Reach out to me on
                     <Box component="span" style={{ marginLeft: 5 }}>
-                        <Link href="https://www.instagram.com/omshreesamal/" color="inherit" target="_blank">
+                        <Icon href="https://www.instagram.com/omshreesamal/" color="inherit" target="_blank">
                             <Instagram />
-                        </Link>
+                        </Icon>
                     </Box>  
                         or send me an Email 
-                        <Link href="mailto:am.omsamal@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
+                        <Icon href="mailto:am.omsamal@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
                             <Email />
-                        </Link>.
+                        </Icon>.
                 </Text>
             </Wrapper>
         </Box>
