@@ -49,7 +49,9 @@ export const Comments = ({ post }) => {
                 setComments(response.data);
             }
         }
-        getData();
+        if(post._id){
+         getData();   
+        }
     },[post, toggle])
     
     const handleChange = (e) => {
