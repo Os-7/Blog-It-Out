@@ -20,6 +20,11 @@ const Text = styled(Typography)`
     color: #878787;
 `;
 
+const Icon = styled(Link)`
+    margin: 0px 5px;
+    position: relative;
+    top: 5px;
+`;
 
 const Contact = () => {
     return (
@@ -29,13 +34,13 @@ const Contact = () => {
                 <Typography variant="h3">Getting in touch is easy!</Typography>    
                 <Text variant="h5">
                     Reach out to me on
-                    <Link href="https://www.instagram.com/codeforinterview/" color="inherit" target="_blank">
+                    <Icon href="https://www.instagram.com/codeforinterview/" color="inherit" target="_blank">
                         <Instagram/>
-                    </Link>
+                    </Icon>
                     or send me an Email 
-                    <Link href="mailto:codeforinterview@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
+                    <Icon href="mailto:codeforinterview@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
                         <Email />
-                    </Link>.
+                    </Icon>.
                 </Text>
             </Wrapper>
         </Box>
